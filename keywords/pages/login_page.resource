@@ -19,6 +19,6 @@ Require Id
 Require Password
     common_function.Check Text Should Be         ${login_locator.error_login}        Epic sadface: Password is required 
 
-Login Out Success
+Logout Success
     common_function.Check Text Should Be          ${login_locator.home_page}                  Swag Labs
     

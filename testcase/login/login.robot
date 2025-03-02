@@ -1,7 +1,7 @@
 *** Setting ***
 Resource    ${CURDIR}/../../import/import.resource
 Test Setup     Open Browser    ${web_site.saucedemo}        ${web_broser.chrome}
-Test Teardown
+Test Teardown    Close Browser
 
 *** Test Cases ***
 
@@ -30,9 +30,9 @@ Verify That System Can Not Login When Use Blank Password.
     login_function.Login To System       ${valid_user.id}        ${blank_user.password}
     login_page.Require Password
 
-Verify That System Can Login Out Success.
+Verify That System Can Logout Success.
     [Tags]     LG_006
     login_function.Login To System       ${valid_user.id}        ${valid_user.password}
     product_page.Verify Access To Product Page Success
     burger_feature.Logout From System
-    login_page.Login Out Success
+    login_page.Logout Success

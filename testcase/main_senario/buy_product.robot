@@ -1,5 +1,6 @@
 *** Setting ***
 Resource    ${CURDIR}/../../import/import.resource
+Suite Teardown    Close Browser
 
 *** Test Cases ***
 Order Product Success
