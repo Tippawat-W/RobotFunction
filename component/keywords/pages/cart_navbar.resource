@@ -1,5 +1,5 @@
 *** Keywords ***
-Click Cart Button On Navbar
+Click Cart Button
     common_function.Click By Element            ${cart_locator.menu_botton} 
 
 Verify Number Of Product Add To Cart

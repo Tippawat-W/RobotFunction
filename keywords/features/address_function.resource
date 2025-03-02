@@ -1,5 +1,6 @@
 *** Keywords ***
-Information '${firstname}' and '${lastname}' and '${zipcode}' Data
+Information Data
+    [Arguments]        ${firstname}        ${lastname}        ${zipcode}
     address_page.Input Firstname            ${firstname}
     address_page.Input Lastname             ${lastname}
     address_page.Input Zipcode               ${zipcode}
