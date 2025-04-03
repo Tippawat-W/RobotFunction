@@ -4,7 +4,7 @@ Access To Finish Page
     finish_page.Verify Access To Finish Page Success
 
 Check Product Name
-    [Arguments]           ${product_name}
+    [Arguments]    ${product_name}
     FOR    ${values}    IN  @{product_name.values()}
-        payment_page.Product Name          ${values}
+        payment_page.Product Name    ${values}
     END
